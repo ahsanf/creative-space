@@ -1,0 +1,153 @@
+*{
+    border: 0;
+    font-family: 'Oxygen', sans-serif !important;
+    margin: 0;
+    padding: 0;
+}
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+/* Social Icons */
+.iconsocial{
+    background: url([[pix:theme|sprite_social_icons]]) no-repeat;
+    cursor: pointer;
+    float: left;
+    height: 25px;
+    margin: 6px 0 0 15px;
+    width: 25px;
+}
+
+.rsssocial        { background-position: 0 0;      }
+.twittersocial    { background-position: -25px 0;  }
+.dribbblesocial   { background-position: -50px 0;  }
+.vimeosocial      { background-position: -75px 0;  }
+.facebooksocial   { background-position: -100px 0; }
+.forrstsocial     { background-position: -125px 0; }
+.zerplysocial     { background-position: -150px 0; }
+.githubsocial     { background-position: -175px 0; }
+.youtubesocial    { background-position: -200px 0; }
+.skypesocial      { background-position: -225px 0; }
+.flickrsocial     { background-position: -250px 0; }
+.sharethissocial  { background-position: -275px 0; }
+.diggsocial       { background-position: -300px 0; }
+.gplussocial      { background-position: -325px 0; }
+.lastfmsocial     { background-position: -350px 0; }
+.evernotesocial   { background-position: -375px 0; }
+.embersocial      { background-position: -400px 0; }
+.linkedinsocial   { background-position: -425px 0; }
+.paypalsocial     { background-position: -450px 0; }
+.tumblrsocial     { background-position: -475px 0; }
+.behancesocial    { background-position: -500px 0; }
+.aimsocial        { background-position: -525px 0; }
+.yahoosocial      { background-position: -550px 0; }
+.wordpresssocial  { background-position: -575px 0; }
+.pinterestsocial  { background-position: -600px 0; }
+
+.rsssocial:hover        { background-position: 0 [[setting:themespriteposition]];      }
+.twittersocial:hover    { background-position: -25px [[setting:themespriteposition]];  }
+.dribbblesocial:hover   { background-position: -50px [[setting:themespriteposition]];  }
+.vimeosocial:hover      { background-position: -75px [[setting:themespriteposition]];  }
+.facebooksocial:hover   { background-position: -100px [[setting:themespriteposition]]; }
+.forrstsocial:hover     { background-position: -125px [[setting:themespriteposition]]; }
+.zerplysocial:hover     { background-position: -150px [[setting:themespriteposition]]; }
+.githubsocial:hover     { background-position: -175px [[setting:themespriteposition]]; }
+.youtubesocial:hover    { background-position: -200px [[setting:themespriteposition]]; }
+.skypesocial:hover      { background-position: -225px [[setting:themespriteposition]]; }
+.flickrsocial:hover     { background-position: -250px [[setting:themespriteposition]]; }
+.sharethissocial:hover  { background-position: -275px [[setting:themespriteposition]]; }
+.diggsocial:hover       { background-position: -300px [[setting:themespriteposition]]; }
+.gplussocial:hover      { background-position: -325px [[setting:themespriteposition]]; }
+.lastfmsocial:hover     { background-position: -350px [[setting:themespriteposition]]; }
+.evernotesocial:hover   { background-position: -375px [[setting:themespriteposition]]; }
+.embersocial:hover      { background-position: -400px [[setting:themespriteposition]]; }
+.linkedinsocial:hover   { background-position: -425px [[setting:themespriteposition]]; }
+.paypalsocial:hover     { background-position: -450px [[setting:themespriteposition]]; }
+.tumblrsocial:hover     { background-position: -475px [[setting:themespriteposition]]; }
+.behancesocial:hover    { background-position: -500px [[setting:themespriteposition]]; }
+.aimsocial:hover        { background-position: -525px [[setting:themespriteposition]]; }
+.yahoosocial:hover      { background-position: -550px [[setting:themespriteposition]]; }
+.wordpresssocial:hover  { background-position: -575px [[setting:themespriteposition]]; }
+.pinterestsocial:hover  { background-position: -600px [[setting:themespriteposition]]; }
+
+/* Default Itens */
+#defaultlogo{
+    background: url([[pix:theme|defaultlogo]]) no-repeat center;
+    height: 70px;
+    width: 200px;
+}
+#logo{
+    background: url([[setting:logourl]]) no-repeat center;
+    height: 70px;
+    width: 200px;
+}
+#defaultlogowhite{
+    background: url([[pix:theme|defaultlogowhite]]) no-repeat center;
+    height: 70px;
+    width: 200px;
+}
+#logowhite{
+    background: url([[setting:footermod_aboutus_whitelogo]]) no-repeat center;
+    height: 70px;
+    width: 200px;
+}
+.shadow1{
+    background: url([[pix:theme|shadow1]]) no-repeat center;
+    height: 20px;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+.shadow2{
+    background: url([[pix:theme|shadow2]]) no-repeat center;
+    height: 13px;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+.leftsidebar, .rightsidebar{
+    height: auto;
+    min-height: 300px;
+    width: 100%;
+}
+
+/*Moodle Base Override*/
+#page #outercontainer{
+    background: none !important;
+    background-position: 0 0 !important;
+    margin: 0 !important;
+    min-width: 0 !important;
+    width: 100% !important;
+}
+#page-content{
+    clear: none !important;
+    float: none !important;
+    overflow: auto !important;
+    width: 100% !important;
+}
+#page-content #region-main-box,#page-content #region-main-box #region-post-box{
+    float: none !important;
+    right: 0 !important;
+    width: 100% !important;
+}
+#page-content #region-main-box #region-post-box #region-main{
+    float: none !important;
+    left: 0 !important;
+    width: 100% !important;
+}
+#page-content #region-main-box #region-post-box #region-main #region-content{
+    padding: 0 0 10px 20px !important;
+}
+
+#section-0,#section-2,#section-4,#section-6,#section-8,#section-10,#section-12,#section-14,#section-16,#section-18,#section-20,#section-22,#section-24,#section-26,#section-28,#section-30{
+    background: #EEEEEE;
+}
+.section{
+    color: #444444 !important;
+    margin: 0 !important;
+    padding: 15px 0 5px 0 !important;
+}
+.quizinfo, #intro div,h2.main{
+    text-align: center;
+}
+h2.main{
+    margin-top: 25px;
+}

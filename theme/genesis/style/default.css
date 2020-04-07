@@ -1,0 +1,222 @@
+/* Header */
+#topbar{
+    background-color: #F1F2F2;
+    height: 38px;
+    border-bottom: 1px solid #DFDFDF;
+}
+.topbutton{
+    background-color: [[setting:color1]];
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;
+    height: 38px;
+    padding-top: 9px;
+    text-align: center;
+    width: 60px;
+    
+    -moz-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+}
+.topbutton:hover{
+    background-color: [[setting:color3]];
+}
+.topbutton a{
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 16px !important;
+    text-decoration: none;
+}
+.topbutton a:hover{
+    text-decoration: none;
+}
+
+#menubar{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;
+    height: 110px;
+    padding: 15px 0;
+    margin-bottom: 0;
+}
+
+/* Menu */
+nav#menu{
+    float: right;
+    margin-top: 3px;
+}
+nav#menu a {
+    color: #868787;
+    display: inline-block;
+    font-size: 22px !important;
+    font-weight: lighter;
+    letter-spacing: 1px !important;
+    margin: 17px 15px !important;
+    outline: none;
+    position: relative;
+    text-decoration: none;
+    text-shadow: 0 0 1px rgba(255,255,255,0.3);
+    
+}
+nav#menu a:last-child{
+    margin-right: 0 !important;
+}
+nav#menu a:hover,
+nav#menu a:focus {
+    outline: none;
+}
+
+#menu a {
+    overflow: hidden;
+    padding: 0 !important;
+    height: 1.3em !important;
+}
+
+#menu a span {
+    display: inline-block;
+    position: relative;
+    -webkit-transition: -webkit-transform 0.3s;
+    -moz-transition: -moz-transform 0.3s;
+    transition: transform 0.3s;
+}
+
+#menu a span::before {
+    position: absolute;
+    top: 100%;
+    content: attr(data-hover);
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+#menu a:hover span,
+#menu a:focus span {
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    transform: translateY(-100%);
+    color: [[setting:color1]];
+}
+
+#menu a.menuactive{
+    color: [[setting:color1]];
+}
+
+/* Footer */
+#footer{
+    background: #252525;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;
+    bottom: 0;
+    height: 265px;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+}
+
+#footer ul{
+    margin: 0;
+}
+
+#footer p.title{
+    border-bottom: 1px solid [[setting:color4]];
+    color: [[setting:color4]];
+    font-size: 14px;
+    font-weight: bold;
+    margin: 15px 0;
+    padding-bottom:3px;
+    text-transform: uppercase;
+}
+
+#footerend{
+    background: #020202;
+    bottom: 0;
+    color: #FFFFFF;
+    height: 35px;
+    margin: 0;
+    position: relative;
+    width: 100%;
+}
+
+#footerendleft{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;
+    color: #F1F2F2;
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+#footerendright{
+    float: right;
+}
+
+/* Footer Ararazu Modules */
+
+/* About us */
+.footermod{
+    color: #FFFFFF;
+}
+
+.footermod_aboutus p{
+    text-align: justify;
+    width: 100%;
+}
+
+/* Image */
+.footermod_image div.image{
+    height: 150px;
+    width: 100%;
+}
+.footermod_image div.image img{
+    height: 100%;
+    width: 100%;
+}
+
+/* Links */
+.footermod_links ul.links{
+    list-style: none;
+    width: 100%;
+}
+.footermod_links ul.links li{
+    border-bottom: 1px solid #5F6366;
+    padding: 6px 0;
+}
+.footermod_links ul.links li:first-child{
+    padding-top: 0;
+}
+.footermod_links ul.links li:last-child{
+    border-bottom: 0;
+}
+
+.footermod_links ul.links li a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/* Contact Info */
+.footermod_contactinfo ul.contactinfos{
+    list-style: none;
+    width: 90%;
+}
+.footermod_contactinfo ul.contactinfos li{
+    padding: 2px 0;
+    text-indent: 18px;
+}
+.footermod_contactinfo ul.contactinfos li:first-child{
+    padding-top: 0;
+}
+
+.address_icon{
+    background: url([[pix:theme|home|]]) 0 3px no-repeat;
+}
+.city_icon{
+    background: url([[pix:theme|globe|]]) 0 5px no-repeat;
+}
+.phone_icon{
+    background: url([[pix:theme|mobile|]]) 0 6px no-repeat;
+}
+.mail_icon{
+    background: url([[pix:theme|mail|]]) 0 7px no-repeat;
+}

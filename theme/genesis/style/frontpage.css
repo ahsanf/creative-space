@@ -1,0 +1,189 @@
+/* Course List */
+#featuredCourses{
+    color: [[setting:color2]];
+    font-size: 17px !important;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+#allCourses{
+    margin-bottom: 10px;
+}
+#allCourses div{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;
+    background: [[setting:color1]];
+    color: #FFFFFF;
+    cursor: pointer;
+    float: right;
+    font-size: 13px !important;
+    font-weight: bold;
+    height: 100%;
+    padding: 5px 15px;
+    
+    -moz-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+}
+#allCourses div:hover{
+    background-color: [[setting:color3]];
+}
+
+.course{
+    border: 1px solid #EEEEEE;
+    height: 200px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+/* Link Box*/
+.linkbox{
+    background: #F1F2F2;
+    border: 1px solid #DDDDDD;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;
+    height: 300px;
+    line-height: 15px;
+    margin-bottom: 15px;
+    padding: 25px 10px 0 10px;
+    width: 100%;
+    
+    -moz-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+}
+.linkbox:hover{
+    background: #E1E1E1;
+    border: 1px solid #BBBBBB;
+    cursor: pointer;
+}
+
+.linkbox p{
+    color: #6C6C6C;
+    width: 100%;
+}
+.linkbox p.title{
+    margin: 5px auto;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+.linkbox p.description{
+    font-size: 12px;
+    margin-top: 10px;
+    text-align: center;
+}
+.linkbox div.readmore{
+    background: [[setting:color1]];
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 12px;
+    margin: 15px auto 0 auto;
+    padding: 10px;
+    text-align: center;
+    width: 100px;
+    
+    -moz-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+}
+
+.linkbox div.readmore:hover{
+    background: [[setting:color3]];
+}
+
+/* Link Box Icons */
+.linkboxicon{
+    height: 70px;
+    margin: 0 auto;
+    width: 90px;
+}
+.airplaneicon{
+    background: url([[pix:theme|linkbox_icons/airplane]]) center no-repeat;
+}
+.bookicon{
+    background: url([[pix:theme|linkbox_icons/book]]) center no-repeat;
+}
+.calendaricon{
+    background: url([[pix:theme|linkbox_icons/calendar]]) center no-repeat;
+}
+.cameraicon{
+    background: url([[pix:theme|linkbox_icons/camera]]) center no-repeat;
+}
+.cardicon{
+    background: url([[pix:theme|linkbox_icons/card]]) center no-repeat;
+}
+.clockicon{
+    background: url([[pix:theme|linkbox_icons/clock]]) center no-repeat;
+}
+.cloudicon{
+    background: url([[pix:theme|linkbox_icons/cloud]]) center no-repeat;
+}
+.coffeeicon{
+    background: url([[pix:theme|linkbox_icons/coffee]]) center no-repeat;
+}
+.communicationicon{
+    background: url([[pix:theme|linkbox_icons/communication]]) center no-repeat;
+}
+.crossicon{
+    background: url([[pix:theme|linkbox_icons/cross]]) center no-repeat;
+}
+.educationicon{
+    background: url([[pix:theme|linkbox_icons/education]]) center no-repeat;
+}
+.hearticon{
+    background: url([[pix:theme|linkbox_icons/heart]]) center no-repeat;
+}
+.imageicon{
+    background: url([[pix:theme|linkbox_icons/image]]) center no-repeat;
+}
+.smartphoneicon{
+    background: url([[pix:theme|linkbox_icons/smartphone]]) center no-repeat;
+}
+.linkicon{
+    background: url([[pix:theme|linkbox_icons/link]]) center no-repeat;
+}
+.locationicon{
+    background: url([[pix:theme|linkbox_icons/location]]) center no-repeat;
+}
+.lockedicon{
+    background: url([[pix:theme|linkbox_icons/locked]]) center no-repeat;
+}
+.maleicon{
+    background: url([[pix:theme|linkbox_icons/male]]) center no-repeat;
+}
+.membersicon{
+    background: url([[pix:theme|linkbox_icons/members]]) center no-repeat;
+}
+.musicicon{
+    background: url([[pix:theme|linkbox_icons/music]]) center no-repeat;
+}
+.penicon{
+    background: url([[pix:theme|linkbox_icons/pen]]) center no-repeat;
+}
+.phoneicon{
+    background: url([[pix:theme|linkbox_icons/phone]]) center no-repeat;
+}
+.rateicon{
+    background: url([[pix:theme|linkbox_icons/rate]]) center no-repeat;
+}
+.statsicon{
+    background: url([[pix:theme|linkbox_icons/stats]]) center no-repeat;
+}
+.technologyicon{
+    background: url([[pix:theme|linkbox_icons/technology]]) center no-repeat;
+}
+.tickicon{
+    background: url([[pix:theme|linkbox_icons/tick]]) center no-repeat;
+}
+.wrenchicon{
+    background: url([[pix:theme|linkbox_icons/wrench]]) center no-repeat;
+}
