@@ -1,0 +1,1002 @@
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oswald Regular'), local('Oswald-Regular'), url(https://fonts.gstatic.com/s/oswald/v10/yg0glPPxXUISnKUejCX4qfesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oswald Regular'), local('Oswald-Regular'), url(https://fonts.gstatic.com/s/oswald/v10/pEobIV_lL25TKBpqVI_a2w.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+body.path-mod-evoting #divOptions .evotingOption, body.path-mod-evoting #clientOptions #evotingOption .evotingOptionBtn, body.path-mod-evoting #divOptions .evotingOption, body.path-mod-evoting #clientOptions #evotingOption .evotingOptionBtnSelect, body.path-mod-evoting #divTableControl * {
+	font-family: 'Oswald', Helvetica, Arial, sans-serif;
+	letter-spacing: 1px;
+	color: #007cb7;
+}
+
+body.path-mod-evoting .bigContainer {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+body.path-mod-evoting .toastBg {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: rgba(0,124,183,0.7);
+}
+
+body.path-mod-evoting #myToast span {//
+	display: none;
+	font-family:"oswald";
+}
+
+body.path-mod-evoting .toast {
+	margin: auto;
+	background-color: #fff;
+	border: 4px solid #ccc;
+	color: #007cb7;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 18px;
+	font-weight: 500;
+	padding: 10px;
+	line-height: 30px;
+	overflow: hidden;
+	-webkit-box-shadow: 0px 0px 24px -1px rgba(56, 56, 56, 1);
+	-moz-box-shadow: 0px 0px 24px -1px rgba(56, 56, 56, 1);
+	box-shadow: 0px 0px 24px -1px rgba(56, 56, 56, 1);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+
+body.path-mod-evoting .toastLoading {
+	margin: auto;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 18px;
+	font-weight: 500;
+	padding: 10px;
+	line-height: 30px;
+	overflow: hidden;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+	background: transparent url('pix/loading.gif') no-repeat center center;
+	background-size: 200px 200px;
+	width: 200px;
+	height: 200px;
+}
+
+body.path-mod-evoting #preloadImg {
+	background: transparent url('pix/loading.gif') no-repeat center center;
+}
+
+body.path-mod-evoting .msgZone {
+	position
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+body.path-mod-evoting .msg {
+	width: 60%;
+	height: 100%;
+	margin: 0 auto;
+	background-color: #fff;
+	border: 4px solid #ccc;
+	color: #007cb7;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 36px;
+	font-size: 18px;
+	font-weight: 500;
+	padding: 15px;
+}
+/*
+body.path-mod-evoting .container {
+	display: table;
+	width: 100%;
+	height: 33.3%;
+	padding: 0px;
+}
+
+body.path-mod-evoting .container div {
+	display: table-cell;
+	text-align: center;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	vertical-align: middle;
+	width: 50%
+}
+*/
+body.path-mod-evoting .evotingQuestionTextarea {
+	width: 98%;
+	margin: 0;
+}
+
+body.path-mod-evoting input[type="text"].evotingQuestionText, body.path-mod-evoting input[type="text"]#id_name {
+	width: 70%;
+	height: 25px;
+	line-height: 24px;
+	margin-bottom: 10px;
+	margin-right: 0;
+}
+
+body.path-mod-evoting input[type="radio"].evotingRadio {
+	width: 70px;
+	min-width: 70px;
+	margin-top: 70px;
+	padding-left: 35px;//
+	float: left;
+}
+
+body.path-mod-evoting #QrCodeBig h1 {
+	font-size: 2em;
+	line-height: 40px;
+	margin-bottom: 20px;
+}
+
+body.path-mod-evoting #questionName {
+	margin: 0 auto;
+	color: #007cb7;
+	font-weight: 400;
+	border-top: 1px solid #eee;
+	text-transform: none;
+	line-height: 50px;
+	font-size: 1.3em;
+	padding-bottom: 15px;
+	padding-top : 5px;
+	word-break: break-all;
+}
+
+body.path-mod-evoting #divTableControl {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    align-items: flex-end;
+    display: flex;
+    flex-flow: row wrap;
+    font-size: 16px;
+    font-weight: 200;
+    justify-content: space-around;
+}
+
+body.path-mod-evoting #divTableControl * {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body.path-mod-evoting #divButtonNavigate, #divButtonActivPoll {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+
+body.path-mod-evoting #divDropDownList {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+
+body.path-mod-evoting #divTableControl input {
+	display: block;
+	margin: 0 auto;
+	/*max-width: 100px;*/
+	background: none;
+	border: none;
+	color: #ffffff;
+	outline: none;
+	transition: none;
+	box-shadow: none;
+	-webkit-appearance: none;
+	font-size: 16px;
+	line-height: 22px;
+	padding: 0px 15px 0px 30px;
+	text-shadow: none;
+	/*border: 4px solid #ccc;*/
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	border-radius: 5px;
+	height:40px;
+}
+
+body.path-mod-evoting #divButtonNavigate input {
+	background: #007cb7 url([[pix:evoting|reset]]) no-repeat 4px 10px;
+	background-size: 20px 20px;
+	background-clip: padding-box;
+}
+
+body.path-mod-evoting #divButtonActivPoll input.stopMpoll {
+	background-image: url([[pix:evoting|stop]]);
+}
+
+body.path-mod-evoting #divButtonActivPoll input {
+	background: #007cb7 url([[pix:evoting|start]]) no-repeat 4px 10px;
+	background-size: 20px 20px;
+	background-clip: padding-box;
+}
+
+body.path-mod-evoting #divDropDownList #divDropDownListContenu {
+	margin: 0 auto;
+}
+
+body.path-mod-evoting  #divDropDownList #textSelect {
+    display: flex;
+    margin-right: 5px;
+}
+
+body.path-mod-evoting #divDropDownList #selectZone {
+    display: flex;
+}
+
+body.path-mod-evoting #divDropDownList #selectZone * {
+    color: #fff;
+}
+
+body.path-mod-evoting #divDropDownList select {
+    width: 100%;
+    height: 40px;
+    background: #007cb7 url([[pix:evoting|downArrow]]) no-repeat right center;
+    background-size: 22px 22px;
+    padding: 7px 15px 9px 8px;
+    color: #fff;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+    border: 0px;
+    padding-right: 15px;
+    font-size: 16px;
+    height: 40px;
+    line-height: 16px;
+    margin: 0;
+}
+
+body.path-mod-evoting #divDropDownList  select::-ms-expand {
+	display: none;
+}
+
+body.path-mod-evoting #questionNav {
+	margin-top: 15px;
+	padding-top: 5px;
+	border-bottom: 1px solid #dddddd;
+}
+
+body.path-mod-evoting #questionNav input {
+	margin: 0px;
+	border: none;
+	box-shadow: none;
+	background: none;
+	text-shadow: none;
+	outline: none;
+	padding: 0 18px;
+	line-height: 24px;
+}
+
+body.path-mod-evoting #questionNav input.btnNext {
+	background: url([[pix:evoting|arrowRight]]) no-repeat center right;
+	background-size: 18px 18px;
+	opacity: 0.5;
+	color: #007cb7;
+}
+body.path-mod-evoting #questionNav input.btnNextDes {
+	background: url([[pix:evoting|arrowRight]]) no-repeat center right;
+	background-size: 18px 18px;
+	opacity: 0.2;
+	color: #007cb7;
+}
+
+body.path-mod-evoting #questionNav input.btnPrevious {
+	background: url([[pix:evoting|arrowLeft]]) no-repeat center left;
+	background-size: 18px 18px;
+	opacity: 0.5;
+	color: #007cb7;
+}
+
+body.path-mod-evoting #questionNav input.btnPreviousDes {
+	background: url([[pix:evoting|arrowLeft]]) no-repeat center left;
+	background-size: 18px 18px;
+	opacity: 0.2;
+	color: #007cb7;
+}
+
+body.path-mod-evoting #questionNav input.btnNext:hover, body.path-mod-evoting #questionNav input.btnPrevious:hover {
+	opacity: 1;
+}
+
+body.path-mod-evoting #questionNav input:hover, body.path-mod-evoting #questionNav input:active, body.path-mod-evoting #questionNav input:focus {
+	outline: none;
+}
+
+body.path-mod-evoting .imgGraphic {
+	margin-left: -70px;
+	float: left;
+}
+
+body.path-mod-evoting .labelGraphic {
+	display: block;
+	float: left;
+}
+
+body.path-mod-evoting .evotingSelect {
+	width: 30%;
+	margin-right: 0;
+	height: 25px;
+	font-size: 0.9em;
+}
+
+body.path-mod-evoting .evotingTitle {
+	font-size: 1.1em;
+	font-weight: 600;
+	padding-bottom: 5px;
+	padding-left: 20px;
+}
+
+body.path-mod-evoting .evotingLabel, body.path-mod-evoting .evotingLabelOption {
+	font-size: 1em;
+	font-weight: normal;
+}
+
+body.path-mod-evoting .fgrouplabel {
+	margin-left: 20px;
+}
+
+body.path-mod-evoting hr.evotingHr {
+	color: #999999;
+}
+
+body.path-mod-evoting #divContainerChartCountDown {
+	padding-bottom: 15px;
+}
+
+body.path-mod-evoting #divCountDown {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: 0 auto;
+	margin-top: 10px;
+	display: none;
+}
+
+body.path-mod-evoting #divEndText {
+	font-size: 1.2em;
+	text-align: center;
+	text-transform: uppercase;
+	color: #007cb7;
+}
+
+body.path-mod-evoting #divCountText {
+	width: 100%;
+	/*position: absolute;
+	left: 0;
+	margin: 0;
+	margin-top: 35px;*/
+	font-size: 1.2em;
+	text-align: center;
+	text-transform: uppercase;
+	color: #007cb7;
+	display: none;
+	position: absolute;
+	top: 50%; left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+body.path-mod-evoting #divCountText h1 {
+	font-size: 4em;
+	color: #007cb7;
+	/*padding-top: 25px;*/
+	border:none;
+}
+
+body.path-mod-evoting #divCountText .sec {
+	font-size: 0.7em;
+}
+
+body.path-mod-evoting .block_time { 
+	background: #fff;
+	width: 130px;
+	height: 130px;
+	display: block;
+	border-radius: 50%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	bottom: 0;
+}
+
+body.path-mod-evoting .pie {
+	width: 150px;
+	height: 150px;
+	display: block;
+	position: relative;
+	border-radius: 50%;
+	background-color: #007cb7;
+	border: 2px solid #007cb7;
+	float: left;
+	margin: 2em;
+}
+
+body.path-mod-evoting #time {
+	color: black;
+	/*position: absolute;
+	top: 150px;
+	left: -30px;
+	right: 0;
+	margin: auto;
+	bottom: 0;
+	min-width: 400px;*/
+}
+
+body.path-mod-evoting .degree {
+	/*90 + ( 360 * .1 )*/
+	background-image: linear-gradient(90deg, #007cb7 50%, #007cb7 50%), linear-gradient(90deg, #007cb7 50%, #007cb7 50%);
+}
+
+body.path-mod-evoting #divOptions {
+	width: 100%;
+	margin: 0;
+	padding-top: 280px;
+	display: none;
+}
+
+body.path-mod-evoting #divOptions * {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body.path-mod-evoting #divOptions .evotingOption {
+	position: relative;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	display: inline-block;
+	float: left;
+	border: 1px solid #004668;
+	height: 90px;
+	padding: 0;
+	font-weight: 200;
+	font-size: 1.1em;
+	line-height: 90px;
+	text-transform: uppercase;
+	width: 48%;
+	margin: 4px 1% 5px 1%;
+	background-color: #007cb7;
+}
+
+body.path-mod-evoting #divOptions #evotingOptionEmpty.evotingOption {
+	background-color: #aca39a;
+	opacity: 0.2;
+}
+
+body.path-mod-evoting #divOptions .evotingOption .optionNo {
+	font-size: 3.4em;
+	line-height: 90px;
+	display: block;
+	width: 80px;
+	color: #ffffff;
+	padding-left: 10px;
+}
+
+body.path-mod-evoting #divOptions .evotingOption .optionText {
+	position: absolute;
+	display: block;
+	top: 0;
+	width: 100%;
+	height: 86px;
+	padding-left: 60px;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	line-height: 20px;
+	overflow: hidden;
+}
+
+body.path-mod-evoting #divOptions .evotingOption .optionText span {
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+	height: 90px;
+	white-space: pre-line;
+	word-wrap: break-word;
+	word-break: break-all;
+	text-align: justify;
+	text-align: justify;
+	text-justify: inter-word;
+	color: #fff;
+	padding: 6px;
+	font-size:1.2em;
+	line-height: 1.4em;
+}
+
+body.path-mod-evoting #divTableControl {
+	margin-top: 15px;
+}
+
+body.path-mod-evoting #clientVote {
+	width: 100%;
+	height: 100%;
+	padding: 1%;
+}
+
+body.path-mod-evoting #clientOptions {
+	width: 100%;
+	height:98%;
+	margin: 0;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-flow: row wrap;
+        justify-content: flex-start;
+}
+body.path-mod-evoting #cancelvote {
+	height: 10%;
+}
+
+body.path-mod-evoting #clientOptions #evotingOption {
+	width: 50%;
+	margin: 0;
+	padding: 1%;
+        box-sizing: border-box;
+}
+
+body.path-mod-evoting #clientOptions #evotingOption .evotingOptionBtn, body.path-mod-evoting #clientOptions #evotingOption .evotingOptionBtnSelect {
+	border: 1px solid #004668;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	text-transform: uppercase;
+	margin: 0;
+	background-color: #007cb7;
+}
+
+body.path-mod-evoting #clientOptions #evotingOption .evotingOptionBtnSelect{
+	background-color:#004668;
+}
+
+body.path-mod-evoting #clientOptions #evotingOption .evotingOptionEmpty {
+    border: 1px solid #004668;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #aca39a;
+    opacity: 0.2;
+}
+
+body.path-mod-evoting #clientOptions #evotingOption #optionNo {
+
+	font-weight: 600;
+	color: #ffffff;
+	margin: auto;
+	line-height: normal;
+}
+
+body.path-mod-evoting .noVisible {
+	display: none;
+}
+
+body.path-mod-evoting #divHistorique {
+	margin-bottom: 10px;
+}
+
+body.path-mod-evoting #divHistorique a {
+	background: transparent url([[pix:evoting|history]]) no-repeat center left;
+	background-size: 24px auto;
+	line-height: 24px;
+	display: block;
+	height: 24px;
+	float: right;
+	padding-left: 26px;
+	margin-right: 3px;
+}
+
+body.path-mod-evoting div#affichage {
+	padding-top: 20px;
+}
+
+body.path-mod-evoting #btnHistoryBack {
+	display: block;
+	width: 100px;
+	margin: 0 auto;
+	color: #fff;
+	font-size: 16px;
+	line-height: 22px;
+	padding: 9px 8px 9px 28px;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	border-radius: 5px;
+	font-family: 'Oswald', Helvetica, Arial, sans-serif;
+	letter-spacing: 1px;
+	cursor: pointer;
+	background: #007cb7 url([[pix:evoting|back]]) no-repeat 4px 11px;
+	background-size: 20px 20px;
+	background-clip: padding-box;
+	text-decoration: none !important;
+}
+
+#btnDeleteHistory{
+	display: inline-block;
+	color: #fff;
+	font-size: 16px;
+	line-height: 22px;
+	padding: 7px;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	border-radius: 5px;
+	font-family: "Oswald",Helvetica,Arial,sans-serif;
+	letter-spacing: 1px;
+	cursor: pointer;
+	background: #007cb7;
+	-webkit-background-size: 20px 20px;
+	background-size: 20px 20px;
+	text-decoration: none!important;
+	margin-left: 5px;
+	margin-bottom: 20px;
+}
+
+body.path-mod-evoting .container_question {
+	padding: 10px 10px 4px;
+	margin-bottom: 15px;
+	background-color: #fafafa;
+}
+
+body.path-mod-evoting .evotingCheckBoxMultipleAnswer{
+	margin-top : 10px;
+}
+
+body.path-mod-evoting .container_question:nth-child(even) {
+	
+}
+
+body.path-mod-evoting .header_choice {
+	font-weight: 600;
+	font-size: 1em;
+	font-family: 'Oswald','conduitHES',Helvetica,Arial,sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	
+	position: relative;
+	margin-top: 20px;
+	/*
+	border: 0;
+	border-bottom-width: 1px;
+	border-style: solid;
+	-webkit-border-image: -webkit-linear-gradient(90deg, rgba(130,130,130,0), rgba(130,130,130,0.6), rgba(130,130,130,0)) 0 60%;
+	-moz-border-image: -moz-linear-gradient(90deg, rgba(130,130,130,0), rgba(130,130,130,0.6), rgba(130,130,130,0)) 1 60%;
+	-o-border-image: -o-linear-gradient(90deg, rgba(130,130,130,0), rgba(130,130,130,0.6), rgba(130,130,130,0)) 1 60%;
+	border-image: linear-gradient(90deg, rgba(130,130,130,0), rgba(130,130,130,0.6), rgba(130,130,130,0)) 0 60%;
+	border-image-slice: 1;
+	*/
+}
+
+body.path-mod-evoting .header_choice>div.header_label {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 60px;
+	text-align: left;
+}
+
+body.path-mod-evoting .header_choice>div.header_correct {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 62px;
+	text-align: right;
+}
+
+body.path-mod-evoting .header_choice > div.header_text {
+	padding: 0 80px;
+	text-align: center;
+}
+
+body.path-mod-evoting .container_choices {
+	/*padding-left: 200px;*/
+}
+
+body.path-mod-evoting .container_choice {
+	position: relative;
+	padding: 0px 2px;
+}
+
+body.path-mod-evoting .container_choice * {
+	-moz-box-sizing:initial;
+	box-sizing:initial;
+}
+
+body.path-mod-evoting .container_choice:nth-child(even) {
+	//background-color: #f5f5f5;
+}
+
+body.path-mod-evoting #region-main .mform .container_choice>div.fitem {
+	position: relative;
+	margin: 0;
+}
+
+body.path-mod-evoting #region-main .mform .container_choice>div.fitem>div.col-md-3 {
+	width: 35px;
+	left: 20px;
+	top: 12px;
+	position: absolute;
+	padding: 0;
+	margin: 0;
+	text-align: left;
+}
+
+body.path-mod-evoting #region-main .mform .container_choice>div.fitem>div.col-md-3 label {
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+body.path-mod-evoting #region-main .mform .container_choice>div.fitem>div.felement {
+	padding: 2px 60px 2px 65px;
+	margin: 0;
+	float: none;
+	width: auto;
+}
+
+body.path-mod-evoting #region-main .mform .container_choice>div.fitem>div.felement > input {
+	width: 100%;
+	padding: 2px 6px;
+	margin: 5px 0;
+	height: 25px;
+}
+
+body.path-mod-evoting #region-main .mform .container_choice>div.checkboxgroup1 {
+	position: absolute;
+	right: 0;
+	top: 8px;
+}
+
+body.path-mod-evoting #region-main .mform .container_choice > div.fitem.checkbox > div.fitemtitle,
+body.path-mod-evoting #region-main .mform .container_add_choice > div.fitem.fitem_flink > div.fitemtitle,
+body.path-mod-evoting #region-main .mform .container_delete_question > div.fitem.fitem_flink > div.fitemtitle {
+	display: none;
+	float: none;
+}
+
+body.path-mod-evoting #region-main .mform .container_choice > div.checkboxgroup1 > div.checkbox {
+	padding: 2px;
+	width: 30px;
+}
+
+body.path-mod-evoting #region-main .mform .container_choice > div.checkboxgroup1 > div.checkbox input {
+	width: 24px;
+	height: 24px;
+}
+
+body.path-mod-evoting .container_add_choice {
+	margin: 5px 0;
+}
+
+body.path-mod-evoting #region-main .mform .container_add_choice > div.fitem.fitem_flink > div.felement {
+	float: none;
+	text-align: right;
+}
+
+body.path-mod-evoting #region-main .mform .container_add_choice > div.fitem.fitem_flink > div.felement a.addChoice,
+body.path-mod-evoting #region-main .mform .container_delete_question > div.fitem.fitem_flink > div.felement a.deleteButton {
+	padding-left: 20px;
+	font-weight: bold;
+	line-height: 1.4em;
+	height: 1.4em;
+}
+
+body.path-mod-evoting #region-main .mform .container_add_choice > div.fitem.fitem_flink > div.felement a.addChoice {
+	background: url([[pix:evoting|add]]) no-repeat 0px center;
+	background-size: auto 0.8em;
+}
+
+body.path-mod-evoting #region-main .mform .container_delete_question > div.fitem.fitem_flink > div.felement {
+	float: none;
+	text-align: center;
+	margin-left: 0;
+}
+
+body.path-mod-evoting #region-main .mform .container_delete_question > div.fitem.fitem_flink > div.felement a.deleteButton {
+	background: url([[pix:evoting|delete]]) no-repeat 0px center;
+	background-size: auto 1.4em;
+}
+
+@media screen and (max-width: 800px) {
+	body.path-mod-evoting input[type="text"].evotingQuestionText, body.path-mod-evoting input[type="text"]#id_name {
+		width: 98%;
+	}
+}
+
+@media (max-width: 1199px)
+{
+	body.path-mod-evoting .container_choices
+	{
+		padding-left: 0px;
+	}
+}
+
+/*
+body.path-mod-evoting .mform .container_choices table {
+    width:100%;
+    margin-top: 10px;
+}
+body.path-mod-evoting .container_choices th {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+body.path-mod-evoting .container_choices th.c1 {
+    text-align: left;
+    width:10%;
+}
+body.path-mod-evoting .container_choices td.c1,
+body.path-mod-evoting .container_choices th.c3,
+body.path-mod-evoting .container_choices td.c3 {
+    width:10%;
+    text-align: left;
+}
+body.path-mod-evoting .container_choices th.c2,
+body.path-mod-evoting .container_choices td.c2 {
+    width:80%;
+}
+body.path-mod-evoting .mform .container_choices td .fitem div.fitemtitle {
+    display: inline-block;
+    float: left;
+    text-align: left;
+    width: 25px;
+}
+body.path-mod-evoting .mform .container_choices td.c3 .fitem div.fitemtitle {
+    display:none;
+}
+body.path-mod-evoting .mform .container_choices td.c3 .fadvcheckbox {
+    margin: 0;
+}
+body.path-mod-evoting .mform .container_choices td.c2 .evotingQuestionText {
+    width:98%;
+}
+body.path-mod-evoting .mform .container_choices td.c2 .fitem div.fitemtitle {
+    margin-left: -15px;
+}
+body.path-mod-evoting .mform .container_choices td.c2 .fitem div.felement {
+    display: inline-block;
+    margin: 0;
+    width: 90%;
+}
+body.path-mod-evoting .mform .container_choices td.c2 .fitem div.felement input[type="text"] {
+    width: 98%;
+}
+body.path-mod-evoting .mform .container_choices td.c3 .checkbox input[type="checkbox"] {
+	height:24px;
+	width: 24px;
+}
+*/
+/** pagination **/
+.path-mod-evoting .pagination {
+    border-radius: 4px;
+    margin: 20px 0;
+    padding-left: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    clear: both;
+}
+.path-mod-evoting .pagination > li {
+    display: inline;
+}
+.path-mod-evoting .pagination > li > a,
+.path-mod-evoting .pagination > li > span {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    color: #337ab7;
+    float: left;
+    line-height: 1.42857;
+    margin-left: -1px;
+    padding: 6px 12px;
+    position: relative;
+    text-decoration: none;
+}
+.path-mod-evoting .pagination > li:first-child > a,
+.path-mod-evoting .pagination > li:first-child > span {
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    margin-left: 0;
+}
+.path-mod-evoting .pagination > li:first-child > a::before,
+.path-mod-evoting .pagination > li:first-child > span::before {
+    content: "<";
+}
+.path-mod-evoting .pagination > li:last-child > a::after,
+.path-mod-evoting .pagination > li:last-child > span::after {
+    content: ">";
+}
+.path-mod-evoting .pagination > li:last-child > a,
+.path-mod-evoting .pagination > li:last-child > span {
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.path-mod-evoting .pagination > li > a:focus,
+.path-mod-evoting .pagination > li > a:hover,
+.path-mod-evoting .pagination > li > span:focus,
+.path-mod-evoting .pagination > li > span:hover {
+    background-color: #eee;
+    border-color: #ddd;
+    color: #23527c;
+    z-index: 2;
+}
+.path-mod-evoting .pagination > .active > a,
+.path-mod-evoting .pagination > .active > a:focus,
+.path-mod-evoting .pagination > .active > a:hover,
+.path-mod-evoting .pagination > .active > span,
+.path-mod-evoting .pagination > .active > span:focus,
+.path-mod-evoting .pagination > .active > span:hover {
+    background-color: #337ab7;
+    border-color: #337ab7;
+    color: #fff;
+    cursor: default;
+    z-index: 3;
+}
+.path-mod-evoting .pagination > .disabled > a,
+.path-mod-evoting .pagination > .disabled > a:focus,
+.path-mod-evoting .pagination > .disabled > a:hover,
+.path-mod-evoting .pagination > .disabled > span,
+.path-mod-evoting .pagination > .disabled > span:focus,
+.path-mod-evoting .pagination > .disabled > span:hover {
+    background-color: #fff;
+    border-color: #ddd;
+    color: #777;
+    cursor: not-allowed;
+}
+body.path-mod-evoting #cancelvote {
+    height: 8%;
+    padding-left: 1%;
+    padding-right: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+	cursor : default;
+}
+body.path-mod-evoting #cancelvote h1 {
+}
+
+body.path-mod-evoting #cancelbutton {
+	background-color: #007cb7;
+	box-sizing: border-box;
+	margin: 0;
+	width: 100%;
+	font-family: 'Oswald';
+	border: 1px solid #004668;
+	text-align: center;
+	color: #fff;
+	text-decoration: none;
+	padding: 0px;
+	font-size: 26px;
+}
+
+body.path-mod-evoting h1,body.path-mod-evoting h2, body.path-mod-evoting h3, body.path-mod-evoting h4 {
+	border-bottom : none !important;
+}
